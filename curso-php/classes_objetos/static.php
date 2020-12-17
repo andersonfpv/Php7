@@ -31,3 +31,5 @@ A::mostrarStaticA(); // acessar diretamente pela classe
 
 A::$static = 'Alterado membro de classe!';
 echo A::$static, '<br>'; // acessar diretamente pela classe
+
+
