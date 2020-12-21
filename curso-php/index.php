@@ -14,7 +14,7 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-                <div class="modulo azul-escuro">
+                <div class="modulo roxo-escuro">
                     <h3>9. Includes</h3>
                     <ul>
                         <li>
@@ -25,6 +25,11 @@
                         <li>
                             <a href="exercicio.php?dir=includes&file=include_funcao">
                                 Include Função
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=includes&file=include_require">
+                                Include vs Require
                             </a>
                         </li>
                     </ul>
