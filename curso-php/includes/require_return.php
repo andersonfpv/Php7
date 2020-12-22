@@ -5,7 +5,7 @@ $valorRetorno = require('return_usado.php');
 echo "$valorRetorno<br>";
 echo "$variavelRetornada<br>";
 
-echo __DIR__. '<br>';
+echo __DIR__ . '<br>';
 
 $valorRetorno2 = require(__DIR__ . '/return_nao_usado.php');
 // var_dump($valorRetorno2);

@@ -1,7 +1,6 @@
 <div class="titulo">Include</div>
 
 <?php
-
 echo 'Executei essa linha do arquivo include<br>';
 include('include_arquivo.php');
 // include('include_arquivo.php');

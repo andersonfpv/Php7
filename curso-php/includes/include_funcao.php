@@ -11,7 +11,7 @@ function carregarArquivo() {
 }
 
 echo 'Novamente no arquivo include_funcao<br>';
-// echo soma(1, 8) . '<br>';
+// echo soma(1, 8) . '!<br>';
 carregarArquivo();
 
 echo "Variável = '{$variavel}'.";
