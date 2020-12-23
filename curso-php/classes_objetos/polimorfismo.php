@@ -30,7 +30,7 @@ class Pessoa {
     }
 
     public function comer(Comida $comida) {
-       $this->peso += $comida->peso; 
+        $this->peso += $comida->peso;
     }
 }
 

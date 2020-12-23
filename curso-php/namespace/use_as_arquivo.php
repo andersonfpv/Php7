@@ -1,5 +1,5 @@
-<?php
-namespace Nome\Bem\Grande;
+<?php namespace Nome\Bem\Grande;
+
 echo __NAMESPACE__ . '<br>';
 
 const constante = 123;
@@ -12,6 +12,7 @@ class Classe {
     public $var;
 
     function func() {
-        echo __NAMESPACE__ . ' -> ' . __CLASS__ . ' -> ' . __METHOD__ . '<br>';
+        echo __NAMESPACE__ . ' -> ' . 
+            __CLASS__ . ' -> ' . __METHOD__ . '<br>';
     }
 }

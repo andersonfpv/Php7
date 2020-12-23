@@ -29,7 +29,6 @@ class Pessoa {
 
     public function __set($atrib, $valor) {
         echo "Alterando atributo não declarado: {$atrib}/{$valor}<br>";
-
     }
 
     public function __call($metodo, $params) {
@@ -39,16 +38,21 @@ class Pessoa {
     }
 }
 
-$pessoa = new Pessoa('Ricardo', 40); //chamndo o __construct
-$pessoa->apresentar(); //chamando o __toString
-echo $pessoa, '<br>'; //chamando o __toString
+$pessoa = new Pessoa('Ricardo', 40); // __construct
+$pessoa->apresentar(); // chamando o __toString
+echo $pessoa, '<br>'; // chamando o __toString
 $pessoa->nome = 'Reinaldo';
-$pessoa->apresentar(); //chamando o método diretamente sem o __call
 
-$pessoa->nomeCompleto = 'Muito Legal!'; //chamando __set
-$pessoa->nomeCompleto; //chamando o __get
-echo $pessoa->nome; //acessa o atributo diretamente sem o __get
+// chama o método diretamente sem __call
+$pessoa->apresentar();
 
-$pessoa->exec(1, 'teste', true, [1, 2, 3]); //chamando o __call porque o método não existe no objeto
+$pessoa->nomeCompleto = 'Muito Legal!!!'; // __set
+$pessoa->nomeCompleto; // __get
 
-$pessoa = null; //chamando o __destruct
+// acessa o atributo diretamente sem __get
+echo $pessoa->nome;
+
+// __call pq o método não existe no objeto
+$pessoa->exec(1, 'teste', true, [1, 2, 3]);
+
+$pessoa = null; // __destruct

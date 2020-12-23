@@ -15,7 +15,6 @@ $notasFinais2 = array_map(round, $notas);
 print_r($notasFinais2);
 
 $apenasOsAprovados1 = [];
-
 foreach($notas as $nota) {
     if($nota >= 7) {
         $apenasOsAprovados1[] = $nota;

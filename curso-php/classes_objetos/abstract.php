@@ -2,7 +2,7 @@
 
 <?php
 abstract class Abstrata {
-    abstract public function metodo1();
+    public abstract function metodo1();
     abstract protected function metodo2($parametro);
 }
 
@@ -10,7 +10,7 @@ abstract class FilhaAbstrata extends Abstrata {
     public function metodo1() {
         echo "Executando método 1<br>";
     }
-    
+
     abstract public function metodo3();
 }
 
@@ -21,7 +21,7 @@ class Concreta extends FilhaAbstrata {
     }
 
     protected function metodo2($parametro) {
-        echo "Executando método 2, com parâmetro $parametro<br>";
+        echo "Executando método 2, com parametro $parametro<br>";
     }
 
     public function metodo3() {
@@ -32,12 +32,13 @@ class Concreta extends FilhaAbstrata {
 
 $c = new Concreta();
 $c->metodo1();
-//$c->metodo2('externo');
+// $c->metodo2('externo');
 $c->metodo3();
+
 echo "<br>";
 var_dump($c);
 
 echo "<br>";
-var_dump($c instanceof Concreto);
+var_dump($c instanceof Concreta);
 var_dump($c instanceof FilhaAbstrata);
 var_dump($c instanceof Abstrata);

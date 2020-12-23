@@ -12,7 +12,7 @@ try {
 
 try {
     echo intdiv(8, 0) . '<br>';
-} catch (DivisionByZeroError $e) {
+} catch(DivisionByZeroError $e) {
     echo 'Divisão por zero<br>';
 }
 

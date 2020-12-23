@@ -19,7 +19,7 @@ class Classe extends Abstrata {
     // }
 }
 
-$classe = new Classe ();
+$classe = new Classe();
 $classe->metodo1();
 $classe->metodo2();
 
@@ -31,5 +31,5 @@ $unica = new Unica();
 echo $unica->attr;
 
 // class Duplicata extends Unica {
-//     public $attr2;
+//     public $att2;
 // }

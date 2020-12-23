@@ -9,15 +9,11 @@ while($contador < VALOR_LIMITE) {
     $contador++;
 }
 
-echo "<br><hr>";
-
-$contador = 0;
+$contador = 100;
 do {
     echo "do-while $contador <br>";
     $contador++;
 } while($contador < VALOR_LIMITE);
-
-echo "<br><hr>";
 
 $contador = 0;
 while(true) {

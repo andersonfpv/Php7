@@ -1,16 +1,13 @@
 <div class="titulo">Traits #02</div>
 
 <?php
-
 trait validacao {
     public function validarString($str) {
-        return isset ($str) && $str !== '';
+        return isset($str) && $str !== '';
     }
 }
 
 trait validacaoMelhor {
-    public $b = 'Valor b';
-    private $c = 'Valor c (privado)';
     public function validarString($str) {
         return isset($str) && trim($str);
     }

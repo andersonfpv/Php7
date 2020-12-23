@@ -3,7 +3,7 @@
 <?php
 function soma($a) {
     // algoritmo (30s)
-    return function ($b) use ($a) {
+    return function($b) use ($a) {
         return $a + $b; // 3s
     };
 }

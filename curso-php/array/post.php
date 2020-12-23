@@ -14,7 +14,6 @@
     form > * {
         font-size: 1.8rem;
     }
-
 </style>
 
 <?php

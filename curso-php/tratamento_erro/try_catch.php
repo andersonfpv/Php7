@@ -11,7 +11,7 @@ try {
 }
 
 try {
-    throw new Exception ('Um erro muito estranho');
+    throw new Exception('Um erro muito estranho');
     echo intdiv(7, 0);
 } catch(DivisionByZeroError $e) {
     echo 'Divisão por zero<br>';

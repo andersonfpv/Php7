@@ -1,5 +1,5 @@
 <div class="titulo">Herança</div>
-<!-- :: = chamada de função -->
+
 <?php
 class Pessoa {
     public $nome;
@@ -26,7 +26,7 @@ class Usuario extends Pessoa {
     function __construct($nome, $idade, $login) {
         // $this->nome = $nome;
         // $this->idade = $idade;
-        parent::__construct($nome, $login);
+        parent::__construct($nome, $idade);
         $this->login = $login;
         echo 'Usuario Criado! <br>';
     }
@@ -44,5 +44,4 @@ class Usuario extends Pessoa {
 
 $usuario = new Usuario('Gustavo Mendonça', 21, 'gust_mend');
 $usuario->apresentar();
-
 unset($usuario);

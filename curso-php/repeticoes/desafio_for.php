@@ -1,4 +1,4 @@
-<div class="titulo">Desafio for</div>
+<div class="titulo">Desafio For</div>
 
 <!-- 
 Usar o for...
@@ -13,7 +13,7 @@ Usar o for...
 
 <?php
 $impressao = '';
-for($cont = 1; $cont <= 5; $cont++){
+for($cont = 1; $cont <= 5; $cont++) {
     $impressao .= '#';
     echo "$impressao <br>";
 }
@@ -21,9 +21,9 @@ for($cont = 1; $cont <= 5; $cont++){
 echo '<hr>';
 
 for(
-    $impressao2 = '#'; 
+    $impressao2 = '#';
     $impressao2 !== '######'; 
-    $impressao2 .= '#') 
-    {
-        echo "$impressao2 <br>";
-    }
+    $impressao2 .= '#'
+) {
+    echo "$impressao2 <br>";
+}

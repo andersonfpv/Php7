@@ -2,7 +2,7 @@
 
 <?php
 function saudacao($nome = 'Senhor(a)', $sobrenome = 'Cliente') {
-    echo "Bemm vindo, $nome $sobrenome!<br>";
+    return "Bem vindo, $nome $sobrenome!<br>";
 }
 
 echo saudacao();
@@ -23,5 +23,5 @@ function anotarPedido2($bebida = 'Água', $comida) {
     echo "Para beber: $bebida <br>";
 }
 
-//anotarPedido2('Hamburguer');
+// anotarPedido2('Hamburguer');
 anotarPedido2('Refrigerante2', 'Pizza2');

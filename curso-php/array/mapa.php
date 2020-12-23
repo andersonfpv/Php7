@@ -30,12 +30,10 @@ $lista = array(
 echo '<br>';
 print_r($lista);
 
-$lista[] = "i";
+$lista[] = 'i';
 echo '<br>';
 print_r($lista);
 
 $lista['vinte'] = 'j';
 echo '<br>';
 print_r($lista);
-
-

@@ -11,6 +11,7 @@ define('outro_contexto\constante4', 456);
 
 echo constante1 . '<br>';
 echo constante2 . '<br>';
+// echo contexto\constante3 . '<br>';
 echo \contexto\constante3 . '<br>';
 echo constant(__NAMESPACE__ . '\constante3') . '<br>';
 // echo constante4 . '<br>';
@@ -28,5 +29,5 @@ function strpos($str, $text) {
     return 1;
 }
 
-echo strpos('Texto genérico para busca', 'busca'). '<br>';
-echo \strpos('Texto genérico para busca', 'busca'). '<br>';
+echo strpos('Texto genérico para busca', 'busca') . '<br>';
+echo \strpos('Texto genérico para busca', 'busca') . '<br>';

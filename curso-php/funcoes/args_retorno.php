@@ -16,8 +16,8 @@ function obterMensagemComNome($nome) {
     return "Bem vindo, {$nome}!";
 }
 
-echo '<br>', obterMensagemComNome('Anderson');
-echo '<br>', obterMensagemComNome('Felipe');
+echo '<br>', obterMensagemComNome('Wagner');
+echo '<br>', obterMensagemComNome('Tiago');
 
 function soma($a, $b) {
     return $a + $b;
@@ -28,17 +28,17 @@ $y = 5;
 echo '<br>', soma(45, 78);
 echo '<br>', soma($x, $y);
 
-function trocaValor($a, $novoValor) {
+function trocarValor($a, $novoValor) {
     $a = $novoValor;
 }
 
 $variavel = 1;
-trocaValor($variavel, 3);
+trocarValor($variavel, 3);
 echo '<br>', $variavel;
 
-function trocaValorDeVerdade(&$a, $novoValor) {
+function trocarValorDeVerdade(&$a, $novoValor) {
     $a = $novoValor;
 }
 
-trocaValorDeVerdade($variavel, 5000);
+trocarValorDeVerdade($variavel, 5000);
 echo '<br>', $variavel;

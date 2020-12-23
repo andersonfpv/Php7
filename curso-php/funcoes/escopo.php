@@ -2,7 +2,7 @@
 
 <?php
 function imprimirMensagens() {
-    echo "Olá ";
+    echo "Olá! ";
     echo "Até a próxima!<br>";
 }
 
@@ -10,9 +10,8 @@ imprimirMensagens();
 imprimirMensagens();
 imprimirMensagens();
 
-echo "<br><hr>";
+$variavel = 1;
 
-$variavel = 1; 
 function trocaValor() {
     $variavel = 2;
     echo "Durante a função: $variavel <br>";
@@ -21,8 +20,6 @@ function trocaValor() {
 echo "Antes: $variavel <br>";
 trocaValor();
 echo "Depois: $variavel <br>";
-
-echo "<br><hr>";
 
 function trocaValorDeVerdade() {
     global $variavel;
@@ -33,7 +30,5 @@ function trocaValorDeVerdade() {
 echo "Antes: $variavel <br>";
 trocaValorDeVerdade();
 echo "Depois: $variavel <br>";
-
-echo "<br><hr>";
 
 var_dump(trocaValorDeVerdade());

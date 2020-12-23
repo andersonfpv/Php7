@@ -8,7 +8,7 @@ error_reporting(E_ERROR);
 // echo 4 / 0 . '<br>';
 
 error_reporting(E_ALL);
-//echo 4 / 0 . '<br>';
+// echo 4 / 0 . '<br>';
 
 error_reporting(~E_ALL);
 echo 4 / 0 . '<br>';
@@ -19,7 +19,7 @@ error_reporting(E_ALL);
 echo 4 / 0 . '<br>';
 include 'arquivo_inexistente.php';
 
-function filtrarMensagem($erro, $errstring) {
+function filtrarMensagem($errno, $errstring) {
     $text = 'include';
     // $text = 'by zero';
     return !!stripos(" $errstring", $text);
@@ -36,4 +36,4 @@ echo '<hr>';
 restore_error_handler();
 
 echo 4 / 0 . '<br>';
-include('arquivo_inexistente.php');
+include 'arquivo_inexistente.php';

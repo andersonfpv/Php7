@@ -2,10 +2,8 @@
 
 <?php
 $nomes = ["Elza", "Rapunzel", "Branca de neve", "Cinderela"];
-
 $index = array_rand($nomes);
-
-echo "<div center><h1>$nomes[$index]</h1></div>"
+echo "<div center><h1>{$nomes[$index]}</h1></div>"
 
 ?>
 

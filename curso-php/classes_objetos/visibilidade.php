@@ -1,29 +1,29 @@
 <div class="titulo">Visibilidade</div>
-<?php   
+
+<?php
 class A {
     public $publico = 'Público';
     protected $protegido = 'Protegido';
     private $privado = 'Privado';
 
     public function mostrarA() {
-        echo "Class a) Publico = {$this->publico}<br>";
-        echo "Class a) Protegido = {$this->protegido}<br>";
-        echo "Class a) Privado = {$this->privado}<br>";
+        echo "Class A) Publico = {$this->publico}<br>";
+        echo "Class A) Protegido = {$this->protegido}<br>";
+        echo "Class A) Privado = {$this->privado}<br>";
     }
-    
+
     protected function vaiPorHeranca() {
         echo 'Serei transmitido por herança!<br>';
     }
+
     private function naoMostrar() {
-        echo 'Não vou imprimir!';
+        echo 'Não vou imprimir!<br>';
     }
 }
 
 $a = new A();
 $a->mostrarA();
-// $a-> naoMostrar(); desse modo não irá funcionar
-
-echo "Fim!";
+// $a->naoMostrar();
 
 class B extends A {
     public function mostrarB() {
@@ -34,7 +34,6 @@ class B extends A {
         parent::vaiPorHeranca();
     }
 }
-
 echo '<br>';
 $b = new B();
 $b->mostrarB();

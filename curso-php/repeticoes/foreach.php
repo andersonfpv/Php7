@@ -25,19 +25,16 @@ $matrix = [
 ];
 
 foreach ($matrix as $linha) {
-    //echo "$linha <br>";
-    foreach ($linha as $letra) {
+    // echo "$linha <br>";
+    foreach($linha as $letra) {
         echo "$letra ";
     }
     echo "<br>";
 }
 
 $numeros = [1, 2, 3, 4, 5];
-
-//& = referência de memória
 foreach ($numeros as &$dobrar) {
     $dobrar *= 2;
     echo "$dobrar <br>";
 }
-
 print_r($numeros);

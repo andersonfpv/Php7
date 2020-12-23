@@ -10,7 +10,7 @@ echo soma(6, 5, 4) . '<br>';
 
 function somaCompleta(...$numeros) {
     $soma = 0;
-    foreach ($numeros as $num) {
+    foreach($numeros as $num) {
         $soma += $num;
     }
     return $soma;
@@ -24,7 +24,7 @@ echo '<br>' . somaCompleta(...$array);
 function membros($titular, ...$dependentes) {
     echo "Titular: $titular <br>";
     if($dependentes) {
-        foreach ($dependentes as $dep) {
+        foreach($dependentes as $dep) {
             echo "Dependente: $dep <br>";
         }
     }
@@ -35,5 +35,3 @@ membros("Ana Silva", "Pedro", "Rafaela", "Amanda");
 
 echo '<br>';
 membros("Roberto", "Junior");
-
-

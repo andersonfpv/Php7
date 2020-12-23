@@ -1,10 +1,12 @@
 <div class="titulo">Desafio Impressão</div>
-<!-- 
-Enunciado:
+
+<!--
+Enunciado: 
 - Imprima apenas os valores do array que contém indice par
 - Resolver com for e foreach
 - Valores esperados: AAA, CCC, EEE
- -->
+-->
+
 <?php
 $array = [
     "AAA",
@@ -15,14 +17,14 @@ $array = [
     "FFF"
 ];
 
-for ($i = 0; $i < count($array) ; $i++) { 
+for($i = 0; $i < count($array); $i++) {
     if($i % 2 === 1) continue;
-    echo "{$array[$i]} <br>";
+    echo "{$array[$i]} ";
 }
 
-echo "<br><hr>";
+echo "<br>";
 
-foreach ($array as $indice => $valor) {
-    if($indice % 2 === 1) continue;
-    echo "$valor <br>";
+foreach($array as $chave => $valor) {
+    if($chave % 2 !== 0) continue;
+    echo "$valor ";
 }

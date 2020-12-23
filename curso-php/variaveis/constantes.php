@@ -1,9 +1,7 @@
 <div class="titulo">Constantes</div>
 
 <?php
-//uma maneira de definir constante é usando o define(). 
-//Por boas práticas as constantes são criadas com todas as letras maiúsculas
-define('TAXA_DE_JUROS', 5.9); 
+define('TAXA_DE_JUROS', 5.9);
 echo TAXA_DE_JUROS;
 echo '<br>' . $TAXA_DE_JUROS . '!';
 // TAXA_DE_JUROS = 2.5;

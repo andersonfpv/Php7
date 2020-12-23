@@ -19,12 +19,12 @@ interface Felino {
 }
 
 class Cachorro implements Canino {
-    function respirar () {
+    function respirar() {
         return "Irei usar oxigênio!";
     }
 
     function latir(): string {
-        return 'Au Au!!!';
+        return 'Au Au';
     }
 
     function mamar() {
@@ -44,8 +44,8 @@ echo $animal->correr(), '<br>';
 
 echo '<br>';
 var_dump($animal);
-echo '<br>';
 
+echo '<br>';
 var_dump($animal instanceof Cachorro);
 var_dump($animal instanceof Canino);
 var_dump($animal instanceof Mamifero);
